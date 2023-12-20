@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
+import Remover from './views/remover'
 import Sobre from './views/sobre'
 import Home from './views/home'
 import Privacidade from './views/privacidade'
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
+        <Route component={Remover} exact path="/remover" />
         <Route component={Sobre} exact path="/sobre" />
         <Route component={Home} exact path="/" />
         <Route component={Privacidade} exact path="/privacidade" />
